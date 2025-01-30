@@ -8,7 +8,8 @@ const connectDB = require("./db.js");
 const app = express();
 
 // Configure CORS to allow specific origins
-const allowedOrigins = ["http://localhost:3000"];
+const allowedOrigins = ["https://project-blond-three.vercel.app"];
+
 const corsOptions = {
   origin: function (origin, callback) {
     if (allowedOrigins.indexOf(origin) !== -1 || !origin) {
